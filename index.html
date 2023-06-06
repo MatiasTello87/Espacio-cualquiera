@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon -->
+    <link rel="icon" href="./assets/icons/ico.png">
+    <!--link de boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Revista Rota</title>
+</head>
+<body class="body">
+    <header class="header">
+        <img class="logo" src="assets/icons/ico.png" alt="">
+        <button class="abrir_menu" id="abrir_nav"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <ul class="nav_list">
+                <button id="cerrar_nav" class="cerrar_menu"><i class="bi bi-x"></i></button>
+                <li><a href="./pages/articulos.html">Articulos</a></li>
+                <li><a href="./pages/entrevistas.html">Entrevistas</a></li>
+                <li><a href="./pages/vidriera.html">Vidriera</a></li>
+                <li><a href="./pages/talleres.html">Talleres</a></li>
+                <li><a href="./pages/agenda.html">Agenda cultural</a></li>
+                <li><a href="./pages/aporte.html">Aporte</a></li>
+                <li><button class="btn_darkmode" ></button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="presentacion">
+        <div class="titulo">
+            <img src="./assets/img/tittle-rota-1.png" alt="">
+        </div>
+        <div class="descripcion">
+            <p>Rota es un espacio para la difusión, es una revista, sitio, espacio, un ámbito propio e independiente que nos sirve para construirnos y compartir nuestros cambios y crecimientos.
+            Rota se propone ser una plataforma para quienes deseen ser publicados, escritores artistas en general, que compartan una mirada nueva a preguntas que nos hacemos y que nos interesa ver compartir la entrevista de ciertos personajes que nos indican en  en el cuál distintos artistes,escritos que aborden la reflexión como un canal que nos lleve a repensar ymirar desde otras miradas lo aparentemente concensuado y establecido.
+            Rota es un espacio para tratar la filosofía, las artes y el ser humano en sus expresiones. 
+            El objetivo de la revista es difundir autores que desean ser leídos, es por eso que rota se presta como medio.</p>
+        </div>
+    </div>
+        <section>
+            <!-- ARTÍCULO -->
+            <section class="section_article">
+                <div class="intro">
+                    <h2>Ensayo sobre la experiencia  estética en la danza</h2>
+                    <h4>Introducción</h4>
+                    <p>En estas páginas veremos algunas reflexiones sobre el arte movimiento, 
+                    más precisamente sobre la danza, poniendo especial énfasis en la experiencia 
+                    estética del sujeto que asume esta actividad que es el artista-bailarín, que 
+                    posee similitudes con el artista plástico; pero que en, la experiencia estética, se 
+                    da de diferentes maneras.
+                    El punto de diferencia es el proceso de producción de la obra, la experiencia 
+                    estética que el artista vivencia en el momento mismo en el que se efectúa ésta 
+                    poesis en combinación de la tekné; porque la pregunta es ¿hay experiencia 
+                    estética en la creación o producción artística? ¿Se da de la misma manera en 
+                    las artes plásticas que en las artes en movimiento?
+                    </p>
+                    <a href="/pages/articulos.html">Leer</a>
+                </div>
+                <div class="autor__articulo" id="autor_articulo">
+                    <img src="./assets/img/_MG_2097.png" alt="">
+                    <button id="btn_autor" class="btn_autor">+</button>
+                        <!-- <button class="btn_autor" id="btn_autor">Reseña</button> -->
+                    
+                    <div class="reseña_hiden" id="reseña_hiden">
+                        <p>Lucas Tello es Profesor en Filosofía, graduado en la Universidad Nacional de San Juan, su contacto con el mundo de la danza y sus diversas expresiones, junto con el saber filosófico, le ha posibilitado reflexionar sobre las nociones estéticas que cohabitan en el arte y mas precisamente en las artes escénicas. es por esto que entre sus escritos se puede encontrar pensamientos que, a manera de ensayos, invitan al lector a debatir y dialogar sobre las nociones que presenta, con el fin de favorecer una construcción epistemológica de este campo.
+                        </p>
+                    </div>
+                </div>
+                <div class="genero">
+                    <h3>Articulo</h3>
+                </div>
+            </section>
+            <!-- ENTREVISTA -->
+            <!-- <section class="section__entrevista">
+                <div class="formato">
+                    <h3>Entrevista</h3>
+                </div>
+                <div class="autor__entrevista">
+                    <img src="assets/img/_MG_2097.png" alt="">
+                </div>
+                <p>Egan/Raulo son dos personajes en uno,  y Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum magni totam quia quaerat quisquam ipsa impedit mollitia modi dicta provident. Blanditiis fuga sint molestiae alias explicabo illo excepturi nesciunt quo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil mollitia reprehenderit facilis sint pariatur tenetur fugiat animi recusandae? Commodi quisquam quasi aliquid debitis repellendus eligendi odio voluptatem eum nesciunt eveniet?</p>
+            </section> -->
+            <div class="video__entrevista">
+                <video src="./assets/videos/angel.mp4" controls></video>
+            </div>
+        </section>
+    <footer>
+        <h4>Creado por Matias Tello</h4>
+        <div class="footer_icons">
+            <a href=""><img src="/assets/icons/instagram-alt-logo-24 (1).png" alt=""></a>
+            <a href=""><img src="/assets/icons/yt.png" alt=""></a>
+            <a href=""><img src="/assets/icons/facebook-circle-logo-24.png" alt=""></a>
+        </div>
+    </footer>
+    <!-- index js -->
+    <script src="/js/index.js"></script>
+    <!--link gral js-->
+    <script src="/js/gral.js"></script>
+</body>
+</html>

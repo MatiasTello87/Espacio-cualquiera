@@ -1,0 +1,382 @@
+
+// fonts
+@import 'fonts';
+// header
+@import 'header';
+// footer
+@import 'footer';
+// colores
+@import 'colores';
+// mixins
+@import 'mixins';
+// paddings and margins
+@import 'padding_margenes';
+// placeholders
+@import 'placeholders';
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+// ··································
+
+// Body
+
+body{
+    font-family: 'Lato';
+    // font-weight: 400;
+    overflow-x: hidden;
+    width: 100%;
+    color: $color-negro;
+
+}
+
+// ·············  DARKMODE  ···········
+.darkmode{
+    @extend %darkmode;
+}
+// ·············  HEADER  ·················
+header{
+    @include header();
+}
+
+// ············································
+
+// ············· PAGE PRINCIPAL  ·············
+.presentacion{
+    @extend %display;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 7em 0;
+    .titulo{
+        position: sticky;
+        top: 15em;
+    }
+    .descripcion{
+            width: 300px;
+            font-size: $size_medium;
+            font-weight: $weigth_medium;
+    }
+}
+
+// ································
+// 
+// ·········  ARTICULO  ···········
+.section_article{
+    display: flex;
+    padding: 0 $padding_medium;
+    margin-bottom: $margin_medium;
+    .intro{
+        width: 500px;
+        height: 700px;
+        padding: $padding_medium;
+        border: $border;
+        @include bradius();
+        box-shadow: $sombra;
+        h2{
+            color: $color-blue;
+            margin-bottom: $margin_little;
+        }
+        p{
+            margin: $margin_medium 0;
+            font-size: $size_medium;
+            font-weight: $weigth_medium;
+        }
+        a{
+            @include btns();
+            box-shadow: $sombra;
+            text-decoration: none;
+            &:hover{
+                background-color: $color-blue;
+                color: $color-white;
+            }
+        }
+    }
+    .genero{
+            width: 180px;
+            height: 60px;
+            text-align: end;
+            background-color: $color-blue;
+            @include bradius();
+            box-shadow: $sombra;
+            padding: $padding;
+            transform: translate(-180px, 50px);
+        }
+        h3{
+            padding-bottom: $padding_little;
+            font-size: $size_big;
+            text-align: center;
+            color: $color-white;
+        }
+    .autor__articulo{
+        width: 170px;
+        height: 170px;
+        padding: $padding;
+        transform: translate(-20px, 150px);
+        @include bradius();
+        box-shadow: $sombra;
+        border: $border;
+        // extend?
+            img{
+                width: 120px;
+                border-radius: $borde_circular;
+                margin: 0 auto;
+            }
+            .btn_autor{
+                width: 30px;
+                height: 30px;
+                border-radius: $border_corner;
+                color: $color-white;
+                background-color: $color-blue;
+                transform: translate(110px,-20px);
+                cursor: pointer;
+            }
+            // ~~~~~~~~~~~~reseña de autor~~~~~~~~
+            .reseña_hiden{
+                display: none;
+            }
+            .reseña{
+                display: block;
+                width: 400px;
+                height: 500px;
+            }
+        }
+}
+// ··················································
+
+
+// ··············  ENTREVISTA ··················
+
+.section__entrevista{
+    @extend %display;
+    margin: 10em 0 3em;
+    width: 80%;
+    transform: translate(350px, -250px);
+    background-color: #993955;
+    .formato{
+        width: 180px;
+        height: 60px;
+        text-align: end;
+        background-color: $color-blue;
+        border-radius: $border_corner;
+        padding: $padding;
+        transform: translate(233px, -90px);
+        h3{
+        padding-bottom: $padding_little;
+        font-size: $size_big;
+        text-align: center;
+        color: $color-white;
+        }
+    }
+    .autor__entrevista{
+        width: 220px;
+        height: 170px;
+        text-align: center;
+        padding: $padding;
+        transform: translate(12px, 48px);
+        border: $border;
+        border-radius: $border_corner;
+        img{
+            width: 130px;
+            height: 130px;
+            border-radius: $borde_circular;
+            }
+    }
+    p{
+        width: 50%;
+        padding: $padding_medium;
+        border-radius: $border_corner;
+        border: $border;
+    }
+}
+.video__entrevista{
+    text-align: center;
+    video{
+        width: 80%;
+        border-radius: $border_corner;
+    }
+}
+// ········································
+
+
+
+
+// ·············  FOOTER  ··············
+footer{
+    @include footer();
+}
+// ········································
+
+// ··········  Page Articulos  ············
+
+
+// slider articles
+
+// Container btns right, left
+.container_btns{
+    width: 50%;
+    @extend %display;
+    justify-content: space-evenly;
+    background-color: #db99a4;
+    margin: 0 auto;
+}
+
+@mixin container_articles (){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 450px;
+    padding: $padding_medium;
+    border-radius: $border_corner;
+    border: $border;
+}
+// ····························
+
+.titleArticle{
+    font-size: $size_big;
+    @extend %display;
+    margin: $margin_medium;
+}
+.section_articles{
+    @extend %display;
+    align-items: flex-start;
+    gap: 2em;
+    padding: $padding_medium;
+    // ·········· FIRST ARTICLE ···········
+    .article_one{
+        @include container_articles();
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        align-items: center;
+        box-shadow: $sombra;
+        .num_article{
+            color: $color-blue;
+            font-size: $size_big;
+            font-weight: $weigth_medium;
+            padding: .5em .8em;
+            border-radius: $borde_circular;
+            border: $border;
+            box-shadow: $sombra;
+        }
+        .container_articles{
+            @include container_articles();
+            background-color: $color-light-violet;
+            box-shadow: $sombra;
+        }
+        img{
+            width: 100px;
+            border-radius: $borde_circular;
+        }
+        p{
+            width: 70%;
+        }
+        .article{
+            padding: $padding_medium;
+            border-radius: $border_corner;
+            border: $border;
+            background-color: $color-white;
+            box-shadow: $sombra;
+            h2{
+                font-size: 2em;
+                padding: $padding_medium;
+            }
+            p{
+                font-size: 1.2em;
+                font-weight: 400;
+                width: 100%;
+                line-height: 1.5em;
+            }
+        }
+    }
+}
+    
+
+// ········ MEDIA QUERIES ············
+@media screen and (max-width: 600px) {
+    
+    body{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .presentacion{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 3em;
+        padding: $padding_medium $padding;
+        margin: 0 auto;
+
+        .titulo{
+            position: static;
+        }
+    }
+    header .abrir_menu,
+    header .cerrar_menu{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: $size_big;
+    }
+    .cerrar_menu{
+        color: $color-white;
+        font-size: $size_medium;
+    }
+    nav{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        gap: 1em;
+        top: 0;
+        right: 0;
+        padding: $padding_little;
+        background-color: $color-negro;
+        border-radius: 5px;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+        transition: all 1s ease-out;
+    }
+    .visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav_list{
+        flex-direction: column;
+    }
+    .nav ul li a{
+        color: $color-white;
+    }
+// ···················· DIV PRESENTACIÓN  ···········
+    .presentacion{
+        margin: $margin_medium auto;
+    }
+// ························· SECTION ARTICLE ···········
+    .section_article{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 1em;
+        .intro{
+            width: 350px;
+            height: 700px;
+            margin: 0 auto;
+            padding: $padding;
+        }
+        .genero{
+            transform: translateX(50px);
+        }
+        .autor__articulo{
+            transform: translate(100px, 0);
+            border-radius: 25px 25px 0px 25px;
+            @include bradius();
+        }
+    }
+}

@@ -1,0 +1,12 @@
+%display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%darkmode{
+    background-color: $color-negro;
+    color: $color-white;
+    transition: color 1s ease-out, background-color 1s ease-out;
+    
+}

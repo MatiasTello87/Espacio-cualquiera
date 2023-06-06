@@ -1,0 +1,21 @@
+
+// ········  Función mixin  ··········
+
+
+
+// btns styles
+@mixin btns (){
+    padding: .3em 1em;
+    font-weight: 600;
+    color: $color-blue;
+    border: 1px inset $color-blue;
+    border-radius: 30px;
+    cursor: pointer;
+}
+// ··································
+// border radius - solapa ···
+@mixin bradius (){
+    border-radius: 25px 25px 25px 0px;
+}
+// ······························
+

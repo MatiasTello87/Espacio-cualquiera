@@ -44,19 +44,19 @@
                 border: none;
                 transform: translate(0,6px);
                 cursor: pointer;
-                background-image: url('/assets/icons/sun-black.png');
+                background-image: url('../assets/icons/sun-black.png');
             }
             .sun_white{
                 @extend .btn_darkmode;
-                background-image: url('/assets/icons/sun-white.png');
+                background-image: url('../assets/icons/sun-white.png');
             }
             .btn_home{
                 @extend .btn_darkmode;
-                background-image: url('/assets/icons/home-black.png');
+                background-image: url('../assets/icons/home-black.png');
             }
             .home_white{
                 @extend .btn_darkmode;
-                background-image: url('/assets/icons/home-white.png');
+                background-image: url('../assets/icons/home-white.png');
             }
             a{
                 font-weight: 400;

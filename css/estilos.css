@@ -56,13 +56,13 @@ header {
       border: none;
       transform: translate(0, 6px);
       cursor: pointer;
-      background-image: url("/assets/icons/sun-black.png"); }
+      background-image: url("../assets/icons/sun-black.png"); }
     header .nav_list li .sun_white {
-      background-image: url("/assets/icons/sun-white.png"); }
+      background-image: url("../assets/icons/sun-white.png"); }
     header .nav_list li .btn_home {
-      background-image: url("/assets/icons/home-black.png"); }
+      background-image: url("../assets/icons/home-black.png"); }
     header .nav_list li .home_white {
-      background-image: url("/assets/icons/home-white.png"); }
+      background-image: url("../assets/icons/home-white.png"); }
     header .nav_list li a {
       font-weight: 400;
       font-size: 1.3em;

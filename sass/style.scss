@@ -74,7 +74,7 @@ header{
         width: 500px;
         height: 700px;
         padding: $padding_medium;
-        border: $border;
+        @extend %border;
         @include bradius();
         box-shadow: $sombra;
         h2{
@@ -119,7 +119,7 @@ header{
         transform: translate(-20px, 150px);
         @include bradius();
         box-shadow: $sombra;
-        border: $border;
+        @extend %border;
         // extend?
             img{
                 width: 120px;
@@ -129,7 +129,7 @@ header{
             .btn_autor{
                 width: 30px;
                 height: 30px;
-                border-radius: $border_corner;
+                @extend %border_corner;
                 color: $color-white;
                 background-color: $color-blue;
                 transform: translate(110px,-20px);
@@ -142,7 +142,12 @@ header{
             .reseña{
                 display: block;
                 width: 400px;
-                height: 500px;
+                height: 300px;
+                padding: 2em;
+                @extend %border;
+                @extend %border_corner;
+                transition: all 2s ease-out;
+                transform: translate(20px,-18px);
             }
         }
 }
@@ -162,7 +167,7 @@ header{
         height: 60px;
         text-align: end;
         background-color: $color-blue;
-        border-radius: $border_corner;
+        @extend %border_corner;
         padding: $padding;
         transform: translate(233px, -90px);
         h3{
@@ -178,8 +183,8 @@ header{
         text-align: center;
         padding: $padding;
         transform: translate(12px, 48px);
-        border: $border;
-        border-radius: $border_corner;
+        @extend %border;
+        @extend %border_corner;
         img{
             width: 130px;
             height: 130px;
@@ -189,15 +194,15 @@ header{
     p{
         width: 50%;
         padding: $padding_medium;
-        border-radius: $border_corner;
-        border: $border;
+        @extend %border_corner;
+        @extend %border;
     }
 }
 .video__entrevista{
     text-align: center;
     video{
         width: 80%;
-        border-radius: $border_corner;
+        @extend %border_corner;
     }
 }
 // ········································
@@ -232,8 +237,8 @@ footer{
     gap: 2em;
     width: 450px;
     padding: $padding_medium;
-    border-radius: $border_corner;
-    border: $border;
+    @extend %border_corner;
+    @extend %border;
 }
 // ····························
 
@@ -262,7 +267,7 @@ footer{
             font-weight: $weigth_medium;
             padding: .5em .8em;
             border-radius: $borde_circular;
-            border: $border;
+            @extend %border;
             box-shadow: $sombra;
         }
         .container_articles{
@@ -279,8 +284,8 @@ footer{
         }
         .article{
             padding: $padding_medium;
-            border-radius: $border_corner;
-            border: $border;
+            @extend %border_corner;
+            @extend %border;
             background-color: $color-white;
             box-shadow: $sombra;
             h2{

@@ -10,6 +10,12 @@ header, .presentacion, .section__entrevista, .container_btns, .titleArticle, .se
   color: #f9f9fa;
   transition: color 1s ease-out, background-color 1s ease-out; }
 
+.section_article .autor__articulo .btn_autor, .section_article .autor__articulo .reseña, .section__entrevista .formato, .section__entrevista .autor__entrevista, .section__entrevista p, .video__entrevista video, .section_articles .article_one, .section_articles .article_one .container_articles, .section_articles .article_one .article {
+  border-radius: 15px; }
+
+.section_article .intro, .section_article .autor__articulo, .section_article .autor__articulo .reseña, .section__entrevista .autor__entrevista, .section__entrevista p, .section_articles .article_one, .section_articles .article_one .num_article, .section_articles .article_one .container_articles, .section_articles .article_one .article {
+  border: 1.5px groove #16697a; }
+
 * {
   margin: 0;
   padding: 0;
@@ -93,7 +99,6 @@ header {
     width: 500px;
     height: 700px;
     padding: 3em;
-    border: 1.5px groove #16697a;
     border-radius: 25px 25px 25px 0px;
     box-shadow: 0px 0px 20px 5px rgba(63, 19, 3, 0.248); }
     .section_article .intro h2 {
@@ -135,8 +140,7 @@ header {
     padding: 1em;
     transform: translate(-20px, 150px);
     border-radius: 25px 25px 25px 0px;
-    box-shadow: 0px 0px 20px 5px rgba(63, 19, 3, 0.248);
-    border: 1.5px groove #16697a; }
+    box-shadow: 0px 0px 20px 5px rgba(63, 19, 3, 0.248); }
     .section_article .autor__articulo img {
       width: 120px;
       border-radius: 50%;
@@ -144,7 +148,6 @@ header {
     .section_article .autor__articulo .btn_autor {
       width: 30px;
       height: 30px;
-      border-radius: 15px;
       color: #f9f9fa;
       background-color: #16697a;
       transform: translate(110px, -20px);
@@ -154,7 +157,10 @@ header {
     .section_article .autor__articulo .reseña {
       display: block;
       width: 400px;
-      height: 500px; }
+      height: 300px;
+      padding: 2em;
+      transition: all 2s ease-out;
+      transform: translate(20px, -18px); }
 
 .section__entrevista {
   margin: 10em 0 3em;
@@ -166,7 +172,6 @@ header {
     height: 60px;
     text-align: end;
     background-color: #16697a;
-    border-radius: 15px;
     padding: 1em;
     transform: translate(233px, -90px); }
     .section__entrevista .formato h3 {
@@ -179,24 +184,19 @@ header {
     height: 170px;
     text-align: center;
     padding: 1em;
-    transform: translate(12px, 48px);
-    border: 1.5px groove #16697a;
-    border-radius: 15px; }
+    transform: translate(12px, 48px); }
     .section__entrevista .autor__entrevista img {
       width: 130px;
       height: 130px;
       border-radius: 50%; }
   .section__entrevista p {
     width: 50%;
-    padding: 3em;
-    border-radius: 15px;
-    border: 1.5px groove #16697a; }
+    padding: 3em; }
 
 .video__entrevista {
   text-align: center; }
   .video__entrevista video {
-    width: 80%;
-    border-radius: 15px; }
+    width: 80%; }
 
 footer {
   width: 100%;
@@ -235,8 +235,6 @@ footer {
     gap: 2em;
     width: 450px;
     padding: 3em;
-    border-radius: 15px;
-    border: 1.5px groove #16697a;
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -249,7 +247,6 @@ footer {
       font-weight: 500;
       padding: .5em .8em;
       border-radius: 50%;
-      border: 1.5px groove #16697a;
       box-shadow: 0px 0px 20px 5px rgba(63, 19, 3, 0.248); }
     .section_articles .article_one .container_articles {
       display: flex;
@@ -258,8 +255,6 @@ footer {
       gap: 2em;
       width: 450px;
       padding: 3em;
-      border-radius: 15px;
-      border: 1.5px groove #16697a;
       background-color: #db99a4;
       box-shadow: 0px 0px 20px 5px rgba(63, 19, 3, 0.248); }
     .section_articles .article_one img {
@@ -269,8 +264,6 @@ footer {
       width: 70%; }
     .section_articles .article_one .article {
       padding: 3em;
-      border-radius: 15px;
-      border: 1.5px groove #16697a;
       background-color: #f9f9fa;
       box-shadow: 0px 0px 20px 5px rgba(63, 19, 3, 0.248); }
       .section_articles .article_one .article h2 {

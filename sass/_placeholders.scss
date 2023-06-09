@@ -10,3 +10,13 @@
     transition: color 1s ease-out, background-color 1s ease-out;
     
 }
+
+// Bordes
+%border_corner{
+    border-radius: 15px;
+}
+%border{
+    border: 1.5px groove $color-blue;
+}
+
+$borde_circular: 50% ;

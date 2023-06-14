@@ -294,17 +294,15 @@ footer{
                 padding: $padding_medium;
             }
             p{
-                font-size: 12px;
+                // font-size: 12px;
                 font-weight: 500;
                 width: 100%;
                 line-height: 1.5em;
                 margin: 1em auto;
-                ul li{
-                    // font-size: 1.2em;
-                    // font-weight: 500;
-                    // line-height: 1.5em;
-                    // margin: 1em;
-                }
+            }
+            .article_list{
+                line-height: 1.5em;
+                margin-left: 1em;
             }
         }
     }

@@ -269,11 +269,13 @@ footer {
       .section_articles .article_one .article h2 {
         padding: 3em; }
       .section_articles .article_one .article p {
-        font-size: 12px;
         font-weight: 500;
         width: 100%;
         line-height: 1.5em;
         margin: 1em auto; }
+      .section_articles .article_one .article .article_list {
+        line-height: 1.5em;
+        margin-left: 1em; }
 
 @media screen and (max-width: 600px) {
   body {

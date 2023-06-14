@@ -346,6 +346,7 @@ footer {
     padding: 1em;
     margin: 0 auto; }
     .section_articles .article_one {
+      width: 100%;
       padding: 1em; }
       .section_articles .article_one .article {
         padding: 1em; } }

@@ -269,7 +269,7 @@ footer {
       .section_articles .article_one .article h2 {
         padding: 3em; }
       .section_articles .article_one .article p {
-        font-size: 1em;
+        font-size: 12px;
         font-weight: 500;
         width: 100%;
         line-height: 1.5em;
@@ -341,4 +341,11 @@ footer {
         width: 270px;
         height: 450px;
         text-align: end;
-        transform: translate(30px, 5px); } }
+        transform: translate(30px, 5px); }
+  .section_articles {
+    padding: 1em;
+    margin: 0 auto; }
+    .section_articles .article_one {
+      padding: 1em; }
+      .section_articles .article_one .article {
+        padding: 1em; } }

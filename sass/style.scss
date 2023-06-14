@@ -294,7 +294,7 @@ footer{
                 padding: $padding_medium;
             }
             p{
-                font-size: 1em;
+                font-size: 12px;
                 font-weight: 500;
                 width: 100%;
                 line-height: 1.5em;
@@ -399,4 +399,15 @@ footer{
             }
         }
     }
+// ············ Page articulos ············
+.section_articles{
+    padding: $padding;
+    margin: 0 auto;
+    .article_one{
+        padding: $padding;
+        .article{
+            padding: $padding;
+        }
+    }
+}
 }

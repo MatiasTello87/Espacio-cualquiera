@@ -287,14 +287,14 @@ footer{
             padding: $padding_medium;
             @extend %border_corner;
             @extend %border;
-            background-color: $color-white;
+            // background-color: $color-blue;
             box-shadow: $sombra;
             h2{
                 // font-size: 2em;
                 padding: $padding_medium;
             }
             p{
-                font-size: 1.2em;
+                font-size: 1em;
                 font-weight: 500;
                 width: 100%;
                 line-height: 1.5em;
@@ -395,7 +395,7 @@ footer{
                 width: 270px;
                 height: 450px;
                 text-align: end;
-                transform: translate(40px,5px);
+                transform: translate(30px,5px);
             }
         }
     }

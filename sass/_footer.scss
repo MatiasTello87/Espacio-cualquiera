@@ -4,13 +4,11 @@
     width: 100%;
     height: 70px;
     padding: 1em;
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-top: 1px groove $color-blue;
-    position: absolute;
-    // border-top-right-radius: 15px;
-    // border-top-left-radius: 15px;
     background-color: $color-negro;
     color: $color-white;
     .footer_icons{

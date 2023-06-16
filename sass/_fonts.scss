@@ -7,7 +7,21 @@
 // Tamaños de fuente
 // Big
 $size_big : 1.5em;
+$size_title_medium: 2em;
+$size_title: 3em;
 
 // Medium
 $size_medium : 1.2em;
 $weigth_medium : 500;
+
+// Sombra de titulos
+$shadow_title: 2px 1px 10px opacify($color: #2c2c2c, $amount: 0);
+
+// estilos para titulos de cada page
+
+@mixin titles (){
+    font-size: $size_title;
+    margin: $margin_little;
+    text-shadow: $shadow_title;
+}
+

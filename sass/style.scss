@@ -71,25 +71,34 @@ header{
     padding: 0 $padding_medium;
     margin-bottom: $margin_medium;
     .intro{
-        width: 500px;
-        height: 700px;
+        width: 600px;
+        height: 750px;
         padding: $padding_medium;
         @extend %border;
         @include bradius();
         box-shadow: $sombra;
         h2{
             color: $color-blue;
-            margin-bottom: $margin_little;
+            font-size: $size_title_medium;
+            padding:  1em $padding_regular;
+        }
+        h3{
+            color: $color-blue;
+            font-size: $size_medium;
+        }
+        h4{
+            margin: $margin_little 0;
         }
         p{
-            margin: $margin_medium 0;
             font-size: $size_medium;
             font-weight: $weigth_medium;
+            padding: $padding;
         }
         a{
             @include btns();
             box-shadow: $sombra;
             text-decoration: none;
+            margin-top: 5em;
             &:hover{
                 background-color: $color-blue;
                 color: $color-white;
@@ -243,20 +252,17 @@ footer{
 }
 // ····························
 
-.titleArticle{
-    font-size: $size_big;
-    @extend %display;
-    margin: $margin_medium;
-}
+
 .section_articles{
-    @extend %display;
-    align-items: flex-start;
-    gap: 2em;
-    padding: $padding_medium;
+    h1{
+        @include titles ();
+    }
+    
     // ·········· FIRST ARTICLE ···········
     .article_one{
         @include container_articles();
         width: 95%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         gap: 3em;
@@ -287,18 +293,33 @@ footer{
             padding: $padding_medium;
             @extend %border_corner;
             @extend %border;
-            // background-color: $color-blue;
             box-shadow: $sombra;
-            h2{
-                // font-size: 2em;
-                padding: $padding_medium;
+            h1{
+                font-size: 3em;
+                color: $color-blue;
+                margin: 1em 2em;
+                text-shadow: none;
+            } 
+            &__subtittle{
+                color: $color-blue;
+                margin: .2em 4em ;
+                &--dos{
+                    margin-bottom: 4em;
+                }
+            }
+            h3{
+                color: $color-blue;
             }
             p{
-                // font-size: 12px;
                 font-weight: 500;
                 width: 100%;
                 line-height: 1.5em;
                 margin: 1em auto;
+            }
+            .article__cita{
+                margin: 2em 4em;
+                width: 400px;
+                // background-color: #db99a4;
             }
             .article_list{
                 line-height: 1.5em;
@@ -401,6 +422,7 @@ footer{
 .section_articles{
     padding: $padding;
     margin: 0 auto;
+
     .article_one{
         width: 100%;
         padding: $padding;

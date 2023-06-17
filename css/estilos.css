@@ -343,7 +343,8 @@ footer {
   .section_article {
     flex-direction: column-reverse;
     justify-content: center;
-    gap: 1em; }
+    gap: 1em;
+    padding: 1em; }
     .section_article .intro {
       width: 100%;
       margin: 0 auto;
@@ -358,10 +359,13 @@ footer {
         padding-left: 2em; }
       .section_article .intro h4 {
         padding-left: 2em; }
+      .section_article .intro p {
+        width: 100%;
+        margin-bottom: 1em; }
     .section_article .genero {
-      transform: translateX(-20px); }
+      transform: translateX(15px); }
     .section_article .autor__articulo {
-      transform: translate(30px, -30px);
+      transform: translate(50px, -30px);
       border-radius: 25px 25px 0px 25px;
       border-radius: 25px 25px 25px 0px; }
       .section_article .autor__articulo .reseña {

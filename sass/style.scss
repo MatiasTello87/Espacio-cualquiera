@@ -72,7 +72,6 @@ header{
     margin-bottom: $margin_medium;
     .intro{
         width: 600px;
-        height: 750px;
         padding: $padding_medium;
         @extend %border;
         @include bradius();
@@ -398,10 +397,21 @@ footer{
         gap: 1em;
         .intro{
             width: 100%;
-            height: 600px;
             margin: 0 auto;
             margin-bottom: 2em;
             padding: $padding;
+            h2{ 
+                font-size: $size_big;
+                padding: $padding;
+            }
+            h3{
+                font-size: $size_1em;
+                text-align: start;
+                padding-left: $padding_regular;
+            }
+            h4{
+                padding-left: $padding_regular;
+            }
         }
         .genero{
             transform: translateX(-20px);

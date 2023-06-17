@@ -23,7 +23,7 @@ btn_autor.addEventListener('click',()=>{
 })
 function tamaño_Cel (){
     console.log(window.innerWidth);
-    return window.innerWidth <= 480;
+    return window.innerWidth <= 600;
 }
 if(tamaño_Cel()){
     btn_autor.addEventListener('click',()=>{
